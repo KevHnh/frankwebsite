@@ -1,4 +1,4 @@
-.aboutSection {
+.homeSection {
     color: white;
     font-size: 2rem;
     width:100%;
@@ -7,7 +7,7 @@
     background-color: rgba(0, 0, 0, 0.65);
 }
 
-.aboutWrapper {
+.homeWrapper {
     display: flex;
     flex-direction: column;
     float: right;
@@ -15,20 +15,33 @@
     padding-top: 1rem;
 }
 
-.aboutTitle {
+.homeTitle {
     margin-bottom: 5rem;
 }
 
-.aboutTitle:hover {
+.homeTitle:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
-.aboutPaths {
+.homePaths {
     padding-bottom: 1rem;
 }
 
-.aboutPaths:hover {
+.homePaths:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .homeSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homeWrapper {
+        margin: 0;
+        padding: 0;
+    }
 }

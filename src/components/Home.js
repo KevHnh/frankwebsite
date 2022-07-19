@@ -26,18 +26,18 @@ function Home() {
   };
 
   return (
-    <div className='aboutContainer'>
-        <div className="aboutSection">
-            <div className='aboutWrapper'>
-                <div className="aboutTitle" onClick={() => redirectPage("/")}>FRANK LU</div> 
-                <div className="aboutPaths" onClick={() => redirectPage("/About/")}>ABOUT</div> 
-                <div className="aboutPaths" onClick={() => redirectPage("/Portfolio/")}>PORTFOLIO</div> 
-                <div className="aboutPaths" onClick={() => redirectPage("/Shop/")}>EXPERIENCE</div> 
-                <div className="aboutPaths" onClick={() => redirectPage("/About/")}>SHOP</div>
-                <div className="aboutPaths" onClick={() => redirectPage("/Contact/")}>CONTACT</div> 
+    <div className='homeContainer'>
+        <div className="homeSection">
+            <div className='homeWrapper'>
+                <div className="homeTitle" onClick={() => redirectPage("/")}>FRANK LU</div> 
+                <div className="homePaths" onClick={() => redirectPage("/About/")}>ABOUT</div> 
+                <div className="homePaths" onClick={() => redirectPage("/Portfolio/")}>PORTFOLIO</div> 
+                <div className="homePaths" onClick={() => redirectPage("/Shop/")}>EXPERIENCE</div> 
+                <div className="homePaths" onClick={() => redirectPage("/About/")}>SHOP</div>
+                <div className="homePaths" onClick={() => redirectPage("/Contact/")}>CONTACT</div> 
             </div>
         </div>
-        <div className="aboutBody">
+        <div className="homeBody">
             <BackgroundSlider images={images} duration={10} transition={1}/>
         </div>
     </div>

@@ -1,8 +1,17 @@
 import React from 'react'
+import NavBar from './NavBar'
 
 function Portfolio() {
   return (
-    <div>Portfolio</div>
+    <div className='portfolioContainer'>
+        <div className='navBarContainer'>
+            <NavBar/>
+        </div>
+        <div className="portfolioWrapper">
+            
+        </div>
+
+    </div>
   )
 }
 

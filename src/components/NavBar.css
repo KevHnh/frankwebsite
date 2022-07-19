@@ -1,7 +1,6 @@
 .navBarContainer {
     width: 100%;
-    font-style: normal;
-    font-weight: 800;
+    font-weight: bold;
     font-size: 1vw;
     line-height: 1vw;
     text-align: center;
@@ -27,9 +26,14 @@
 
 .navBarRight a {
     background-color: white;
+    background: linear-gradient(to left, white 50%, black 50%) right;
+    background-size: 210%;
+    transition: .5s ease-out;
 }
 
 .navBarRight a:hover {
+    background-position: left;
+    color: white;
     cursor: pointer;
 }
 
@@ -39,7 +43,7 @@
     right: 0;
     top: 0;
     padding: 1vw;
-    color: #1A2744;
+    color: black;
     font-size: 5vw;
     width: 100%;
     height: 8vw;
@@ -80,6 +84,7 @@
 
     .navButton {
         display: block;
-        background-color: black;
+        background-color: #000000;
+        z-index: 50;
     }
 }

@@ -41,10 +41,11 @@ function NavBar() {
         <div className='navBarContainer'> 
         <a className="homeButton" onClick={() => redirectPage("/")}>FRANK LU</a>
         <div className='navBarRight'>
-            <a>ABOUT</a>
-            <a>PORTFOLIO</a>
-            <a>EXPERIENCE</a>
-            <a>SHOP</a>
+            <a onClick={() => redirectPage("/About/")}>ABOUT</a>
+            <a onClick={() => redirectPage("/Portfolio/")}>PORTFOLIO</a>
+            <a onClick={() => redirectPage("/Experience/")}>EXPERIENCE</a>
+            <a onClick={() => redirectPage("/Shop/")}>SHOP</a>
+            <a onClick={() => redirectPage("/Contact/")}>CONTACT</a>
         </div>
       </div>
       )}

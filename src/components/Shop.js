@@ -1,8 +1,17 @@
 import React from 'react'
+import NavBar from './NavBar'
 
 function Shop() {
   return (
-    <div>Shop</div>
+    <div className='shopContainer'>
+        <div className='navBarContainer'>
+            <NavBar/>
+        </div>
+        <div className="shopWrapper">
+            
+        </div>
+
+    </div>
   )
 }
 
