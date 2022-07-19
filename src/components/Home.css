@@ -1,0 +1,34 @@
+.aboutSection {
+    color: white;
+    font-size: 2rem;
+    width:100%;
+    height: 100vh;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.aboutWrapper {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+}
+
+.aboutTitle {
+    margin-bottom: 5rem;
+}
+
+.aboutTitle:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.aboutPaths {
+    padding-bottom: 1rem;
+}
+
+.aboutPaths:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
