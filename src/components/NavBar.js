@@ -9,7 +9,7 @@ function NavBar() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
   const toggleNav = () => {
-    if (screenWidth > 500) {
+    if (screenWidth > 1000) {
       setToggleMenu(false)
       return
     }
@@ -37,25 +37,29 @@ function NavBar() {
 
   return (
     <div className='navBarContainer'>
-      {(toggleMenu || screenWidth > 500) && (
-        <div className='navBarContainer'> 
-        <a className="homeButton" onClick={() => redirectPage("/")}>FRANK LU</a>
-        <div className='navBarRight'>
-            <a onClick={() => redirectPage("/About/")}>ABOUT</a>
-            <a onClick={() => redirectPage("/Portfolio/")}>PORTFOLIO</a>
-            <a onClick={() => redirectPage("/Experience/")}>EXPERIENCE</a>
-            <a onClick={() => redirectPage("/Shop/")}>SHOP</a>
-            <a onClick={() => redirectPage("/Contact/")}>CONTACT</a>
+      {(toggleMenu || screenWidth > 1000) && (
+        <div className="navBarWrapper">
+          <div className='navBarContainer'>
+            <div className='navBarLeft'> 
+              <a className="homeButton" onClick={() => redirectPage("/")}>FRANK LU</a>
+            </div>
+          <div className='navBarRight'>
+              <a onClick={() => redirectPage("/About/")}>ABOUT</a>
+              <a onClick={() => redirectPage("/Portfolio/")}>PORTFOLIO</a>
+              <a onClick={() => redirectPage("/Experience/")}>EXPERIENCE</a>
+              <a onClick={() => redirectPage("/Shop/")}>SHOP</a>
+              <a onClick={() => redirectPage("/Contact/")}>CONTACT</a>
+          </div>
         </div>
       </div>
       )}
         <div className="navButton">
           {(toggleMenu) ? 
-          <div className="navButton">
-            <div onClick={toggleNav}><CloseIcon className="actualButton" style={{fontSize:"7.5vw"}}/></div> 
+          <div className="navButton close">
+            <div onClick={toggleNav}><CloseIcon className="actualButton" style={{fontSize:"3rem"}}/></div> 
           </div> :
-          <div className="navButton">
-            <div onClick={toggleNav}><MenuIcon className="actualButton" style={{fontSize:"7.5vw"}}/></div>
+          <div className="navButton open">
+            <div onClick={toggleNav}><MenuIcon className="actualButton" style={{fontSize:"3rem"}}/></div>
           </div>
           }
         </div >

@@ -10,6 +10,7 @@ import Experience from './components/Experience';
 function App() {
   return (
     <div className="App">
+      <style>@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');</style>
       <Router>
         <Routes>
           <Route path = "/" element ={<Home/>} />

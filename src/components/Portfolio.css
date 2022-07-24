@@ -1,0 +1,73 @@
+.portfolioContainer {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(255,168,215);
+    background: linear-gradient(180deg, rgba(255,168,215,1) 0%, rgba(188,196,255,1) 100%);
+}
+
+.portfolioWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: rgb(0, 0, 0, .1);
+}
+
+.portfolioBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 25vw;
+    border: 2px solid white;
+    margin: 2rem;
+    background: rgb(0, 0, 0, .1);
+    border-radius: 15px;
+}
+
+.titleContainer {
+    opacity: 1;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: opacity .5s ease-out;
+    z-index: 1;
+}
+
+.imagesContainer {
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    display: flex;
+}
+
+.imageElement {
+    width: 25vw;
+    height: 25vw;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.imageFilterContainer {
+    width: 25vw;
+    height: 25vw;
+    background: rgb(0, 0, 0, .6);
+    position: absolute;
+    transition: background 1s ease;
+    border-radius: 15px;
+}
+
+.sectionContainer:hover .imageFilterContainer{
+    background: transparent;
+    cursor: pointer;
+}
+
+.sectionContainer:hover .titleContainer {
+    opacity: 0;
+}

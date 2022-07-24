@@ -1,8 +1,13 @@
 .navBarContainer {
     position: fixed;
     width: 100%;
-    background-color: white;
     z-index: 5;
+    background: transparent;
+}
+
+.aboutContainer {
+    background: rgb(207,208,251);
+    background: linear-gradient(0deg, rgba(207,208,251,1) 0%, rgba(231,186,126,1) 100%);
 }
 
 .aboutWrapper {
@@ -11,29 +16,43 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 60.5rem;
+    background: rgb(0, 0, 0, .1);
 }
 
 .aboutLeftSection {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color: white;
 }
 
 .aboutRightSection {
     width: 100%;
-    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.aboutImgDesc {
+    color: white;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
 .aboutImgContainer {
-    width: 60%;
+    width: 55%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.aboutText {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 @media screen and (max-width: 500px) {
