@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from './NavBar'
 import './NFTPage.css'
+import WSPGallery from './WSPGallery'
 
 import nftImg1 from '../nftImages/nftImg1.jpg'
 import nftImg2 from '../nftImages/nftImg2.jpg'
@@ -13,15 +14,55 @@ import nftImg8 from '../nftImages/nftImg8.jpg'
 import nftImg9 from '../nftImages/nftImg9.jpg'
 import nftImg10 from '../nftImages/nftImg10.jpg'
 import nftImg11 from '../nftImages/nftImg11.jpg'
+import nftImg12 from '../nftImages/nftImg12.jpg'
 
 function NFTPage() {
+  const galleryImages = [
+    {
+      img: nftImg1
+    },
+    {
+      img: nftImg2
+    },
+    {
+      img: nftImg3
+    },
+    {
+      img: nftImg4
+    },
+    {
+      img: nftImg5
+    },
+    {
+      img: nftImg6
+    },
+    {
+      img: nftImg7
+    },
+    {
+      img: nftImg8
+    },
+    {
+      img: nftImg9
+    },
+    {
+      img: nftImg10
+    },
+    {
+      img: nftImg11
+    },
+    {
+      img: nftImg12
+    },
+  ]
+
   return (
     <div className='nftPageContainer'>
         <div className='navBarContainer'>
             <NavBar/>
         </div>
         <div className="nftPageWrapper">
-          
+        <WSPGallery galleryImages={galleryImages}/>
         </div>
     </div>
   )
