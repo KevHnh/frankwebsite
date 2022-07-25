@@ -4,8 +4,8 @@ import './Portfolio.css'
 import { useNavigate } from "react-router-dom";
 
 import nftImg2 from '../nftImages/nftImg2.jpg'
-import artworkImg13 from '../artworkImages/artworkImg13.png'
-import sketchImg27 from '../sketchesImages/sketchImg27.png'
+import artworkImg13 from '../artworkImages/artworkImg13.jpg'
+import sketchImg27 from '../sketchesImages/sketchImg27.jpg'
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';

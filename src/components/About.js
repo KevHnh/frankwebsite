@@ -14,13 +14,15 @@ function About() {
         <div className="aboutWrapper">
             <div className="aboutLeftSection">
                 <div className="aboutText">
-                    <div>Hi, my name is Frank. <br/><br/></div>
+                    <div>Hi, my name is Frank.</div>
                     <div>I have a passion for drawing.</div>
                 </div>
             </div>
             <div className="aboutRightSection">
-                <LazyLoadImage effect="blur" className="aboutImgContainer" alt="" src={aboutImg2}/>
-                <div className="aboutImgDesc">Flu Sketches</div>
+                <div className="rightSectionItems">
+                    <LazyLoadImage effect="blur" className="aboutImgContainer" alt="" src={aboutImg2}/>
+                    <div className="aboutImgDesc">Flu Sketches</div>
+                </div>
             </div>
         </div>
 

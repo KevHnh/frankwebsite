@@ -1,76 +1,68 @@
 .nftPageContainer {
     background: rgb(168,250,255);
     background: linear-gradient(0deg, rgba(168,250,255,1) 0%, rgba(188,192,255,1) 100%);
+}
+
+.nftPageBody {
+    background: rgb(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    display: block;
-    box-sizing: border-box;
+    width: 100%;
 }
 
 .nftPageWrapper {
-    height: 100vh;
-    background: rgb(0, 0, 0, .1);
-    box-sizing: border-box;
-}
-
-.galleryContainer {
+    margin-top: 3rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    width: 100%;
+    height: 99%;
 }
 
+.nftDirectButton {
+    margin-bottom: 3rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .35rem;
+    border: solid .25rem white;
+    border-radius: 5px;
+    transition: background-color .5s ease, color .5s ease;
+}
+
+.nftDirectButton:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgba(168,250,255,1);
+}
+
+
 @media screen and (max-width: 1478px) {
-    .nftPageWrapper {
-        height: 65rem;
-    }
-
-    .nftPageContainer {
-        height: 65rem;
-    }
-
-    .nftPageWrapper {
+    .nftPageBody {
         height: 65rem;
     }
 }
 
 @media screen and (max-width: 981px) {
-    .nftPageWrapper {
-        height: 75rem;
-    }
-
-    .nftPageContainer {
-        height: 75rem;
-    }
-
-    .nftPageWrapper {
+    .nftPageBody {
         height: 75rem;
     }
 }
 
 @media screen and (max-width: 755px) {
-    .nftPageWrapper {
-        height: 105rem;
-    }
-
-    .nftPageContainer {
-        height: 105rem;
-    }
-
-    .nftPageWrapper {
+    .nftPageBody {
         height: 105rem;
     }
 }
 
 @media screen and (max-width: 505.5px) {
-    .nftPageWrapper {
-        height: 205rem;
-    }
-
-    .nftPageContainer {
-        height: 205rem;
-    }
-
-    .nftPageWrapper {
+    .nftPageBody {
         height: 205rem;
     }
 }
