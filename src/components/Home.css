@@ -9,34 +9,40 @@
 
 .homeWrapper {
     display: flex;
-    flex-direction: column;
-    float: right;
-    padding-right: 2.5rem;
-    padding-top: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .homeTitle {
-    margin-bottom: 5rem;
-}
-
-.homeTitle:hover {
-    text-decoration: underline;
-    cursor: pointer;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color .5s ease;
 }
 
 .homePaths {
-    padding-bottom: 1rem;
+    position: absolute;
+    bottom: 4rem;
+    border: .2rem solid rgba(255, 255, 255, 0.5);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .4rem;
+    border-radius: 15px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color .5s ease, border .5s ease;
+}
+
+.homePaths:hover + .homeTitle {
+    color: rgba(255, 255, 255, 1);
 }
 
 .homePaths:hover {
-    text-decoration: underline;
     cursor: pointer;
-}
-
-@media screen and (max-width: 500px) {
-    .homeSection {
-        display: flex;
-        justify-content: right;
-    }
-
+    color: rgba(255, 255, 255, 1);
+    border: .2rem solid rgba(255, 255, 255, 1);
 }

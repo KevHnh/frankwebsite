@@ -29,12 +29,8 @@ function Home() {
     <div className='homeContainer'>
         <div className="homeSection">
             <div className='homeWrapper'>
-                <div className="homeTitle" onClick={() => redirectPage("/")}>FRANK LU</div> 
-                <div className="homePaths" onClick={() => redirectPage("/About/")}>ABOUT</div> 
-                <div className="homePaths" onClick={() => redirectPage("/Portfolio/")}>PORTFOLIO</div> 
-                <div className="homePaths" onClick={() => redirectPage("/Shop/")}>EXPERIENCE</div> 
-                <div className="homePaths" onClick={() => redirectPage("/About/")}>SHOP</div>
-                <div className="homePaths" onClick={() => redirectPage("/Contact/")}>CONTACT</div> 
+              <div className="homePaths" onClick={() => redirectPage("/About/")}>ENTER</div> 
+                <div className="homeTitle">FRANK LU</div>
             </div>
         </div>
         <div className="homeBody">

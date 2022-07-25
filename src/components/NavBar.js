@@ -46,7 +46,6 @@ function NavBar() {
           <div className='navBarRight'>
               <a onClick={() => redirectPage("/About/")}>ABOUT</a>
               <a onClick={() => redirectPage("/Portfolio/")}>PORTFOLIO</a>
-              <a onClick={() => redirectPage("/Experience/")}>EXPERIENCE</a>
               <a onClick={() => redirectPage("/Shop/")}>SHOP</a>
               <a onClick={() => redirectPage("/Contact/")}>CONTACT</a>
           </div>
