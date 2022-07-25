@@ -11,69 +11,127 @@
 
 .aboutWrapper {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 60.5rem;
-    background: rgb(0, 0, 0, .1);
+    width: 100vw;
+    height: 100vh;
+}
+
+.aboutPadding {
+    width: 20%;
+}
+
+.aboutCard {
+    width: 60vw;
+    height: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .aboutLeftSection {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    color: white;
+    width: 100vw;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    transform: translateX(1rem);
+    border: .2rem solid white;
 }
 
 .aboutRightSection {
-    width: 100%;
+    width: 60%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.aboutImgDesc {
-    color: white;
-    font-size: 2rem;
-    padding-top: 1rem;
 }
 
 .aboutImgContainer {
     width: 25vw;
-    height: auto;
-    border-radius: 30px;
+    border-radius: 15px;
+    border: .2rem solid white;
+    transform: translateX(-1rem);
 }
 
-.rightSectionItems {
+.aboutText {
+    padding: 2rem;
+    padding-right: 5rem;
+    font-size: 1.1vw;
+    white-space: pre-line;
+}
+
+.aboutText > span {
+    white-space: normal;
+    overflow: hidden;
+}
+
+.socialMediaContainer {
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.aboutText {
-    padding: 1rem;
+.socialMediaContainer > a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-decoration: none;
+    color: white;
+    transition: transform .5s ease;
 }
 
-@media screen and (max-width: 800px) {
-    .aboutLeftSection {
-        font-size: 1.5rem;
-    } 
+.socialMediaContainer > a:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 1200px) {
+    .aboutPadding {
+        width: 10%;
+    }
 
     .aboutWrapper {
-        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80rem;
+    }
+
+    .aboutCard {
+        flex-direction: column-reverse;
+    }
+
+    .aboutCard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .aboutLeftSection {
+        width: 17rem;
+        height: 55rem;
+        padding-bottom: 1rem;
+        transform: translateY(-2rem);
+    }
+    
+    .aboutRightSection {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .aboutImgContainer {
-        width: 60vw;
+        width: 20rem;
+        transform: translateX(0rem) translateY(1rem);
     }
 
-    .aboutImgDesc {
-        font-size: 1.5rem;
+    .aboutText {
+        padding: 2rem;
+        padding-top: 5rem; 
+        font-size: 1.1rem;
+        white-space: pre-line;
+    }
+
+    .socialIcons {
+        font-size: 1.5rem !important;
     }
 }
