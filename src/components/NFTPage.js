@@ -62,7 +62,9 @@ function NFTPage() {
             <NavBar/>
         </div>
         <div className="nftPageWrapper">
-        <WSPGallery galleryImages={galleryImages}/>
+          <div className="galleryContainer"> 
+            <WSPGallery galleryImages={galleryImages}/>
+          </div>
         </div>
     </div>
   )

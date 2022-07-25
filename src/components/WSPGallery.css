@@ -1,11 +1,10 @@
 .galleryWrap {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: .5rem;
     align-items: center;
     justify-content: center;
     max-width: 100rem;
-    flex-shrink: 0;
   }
   
   .galleryWrap .single {
@@ -34,6 +33,7 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
   }
   
   .sliderWrap .btnClose, .sliderWrap .btnPrev, .sliderWrap .btnNext {
@@ -71,6 +71,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
   }
   
   .fullScreenImage img {

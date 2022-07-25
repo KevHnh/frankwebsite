@@ -2,12 +2,75 @@
     background: rgb(168,250,255);
     background: linear-gradient(0deg, rgba(168,250,255,1) 0%, rgba(188,192,255,1) 100%);
     height: 100vh;
+    display: block;
+    box-sizing: border-box;
 }
 
 .nftPageWrapper {
+    height: 100vh;
+    background: rgb(0, 0, 0, .1);
+    box-sizing: border-box;
+}
+
+.galleryContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    background: rgb(0, 0, 0, .1);
+}
+
+@media screen and (max-width: 1478px) {
+    .nftPageWrapper {
+        height: 65rem;
+    }
+
+    .nftPageContainer {
+        height: 65rem;
+    }
+
+    .nftPageWrapper {
+        height: 65rem;
+    }
+}
+
+@media screen and (max-width: 981px) {
+    .nftPageWrapper {
+        height: 75rem;
+    }
+
+    .nftPageContainer {
+        height: 75rem;
+    }
+
+    .nftPageWrapper {
+        height: 75rem;
+    }
+}
+
+@media screen and (max-width: 733px) {
+    .nftPageWrapper {
+        height: 105rem;
+    }
+
+    .nftPageContainer {
+        height: 105rem;
+    }
+
+    .nftPageWrapper {
+        height: 105rem;
+    }
+}
+
+@media screen and (max-width: 505.5px) {
+    .nftPageWrapper {
+        height: 205rem;
+    }
+
+    .nftPageContainer {
+        height: 205rem;
+    }
+
+    .nftPageWrapper {
+        height: 205rem;
+    }
 }
