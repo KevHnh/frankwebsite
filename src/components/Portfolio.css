@@ -26,7 +26,7 @@
     align-items: center;
     width: 25vw;
     height: 25vw;
-    border: 2px solid white;
+    border: 3px solid white;
     margin: 2rem;
     background: rgb(0, 0, 0, .1);
     border-radius: 15px;
@@ -57,10 +57,14 @@
 .imageFilterContainer {
     width: 25vw;
     height: 25vw;
-    background: rgb(0, 0, 0, .6);
+    background: rgb(0, 0, 0, .5);
     position: absolute;
     transition: background 1s ease;
     border-radius: 15px;
+}
+
+.sectionContainer:hover {
+    cursor: pointer;
 }
 
 .sectionContainer:hover .imageFilterContainer{
@@ -70,4 +74,37 @@
 
 .sectionContainer:hover .titleContainer {
     opacity: 0;
+}
+
+@media screen and (max-width: 750px) {
+    .portfolioBody {
+        flex-direction: column;
+    }
+
+    .titleContainer {
+        font-size: 1.25rem;
+    }
+
+    .sectionContainer {
+        width: 40vw;
+        height: 40vw;
+        margin: 1rem;
+        background: rgb(0, 0, 0, .1);
+        border-radius: 15px;
+    }
+    
+    .imagesContainer {
+        width: 40vw;
+        height: 40vw;
+    }
+    
+    .imageElement {
+        width: 40vw;
+        height: 40vw;
+    }
+    
+    .imageFilterContainer {
+        width: 40vw;
+        height: 40vw;
+    }
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import NavBar from './NavBar'
-import aboutImg1 from '../images/aboutImg1.png'
-import aboutImg2 from '../images/aboutImg2.png'
+import aboutImg1 from '../images/aboutImg1.jpg'
+import aboutImg2 from '../images/aboutImg2.jpg'
 import './About.css'
 
 function About() {

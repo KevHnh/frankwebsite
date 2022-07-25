@@ -6,6 +6,9 @@ import Portfolio from './components/Portfolio';
 import Shop from './components/Shop';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
+import NFTPage from './components/NFTPage';
+import ArtworkPage from './components/ArtworkPage';
+import SketchbookPage from './components/SketchbookPage';
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
           <Route path = "/Experience/" element ={<Experience/>} />
           <Route path = "/Shop/" element ={<Shop/>} />
           <Route path = "/Contact/" element ={<Contact/>} />
+          <Route path = "/Portfolio/NFT/" element ={<NFTPage/>}/>
+          <Route path = "/Portfolio/Artworks/" element ={<ArtworkPage/>}/>
+          <Route path = "/Portfolio/Sketchbook/" element ={<SketchbookPage/>}/>
         </Routes>
       </Router>
     </div>
