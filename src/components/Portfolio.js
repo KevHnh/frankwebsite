@@ -7,6 +7,9 @@ import nftImg2 from '../nftImages/nftImg2.jpg'
 import artworkImg13 from '../artworkImages/artworkImg13.png'
 import sketchImg27 from '../sketchesImages/sketchImg27.png'
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 
 function Portfolio() {
   const navigate = useNavigate();
@@ -28,7 +31,7 @@ function Portfolio() {
                   NFT WORK
                 </div>
                 <div className="imagesContainer">
-                  <img className="imageElement" src={nftImg2}/>
+                  <LazyLoadImage effect="blur" className="imageElement" src={nftImg2}/>
                   <div className="imageFilterContainer"></div>
                 </div>
               </div>
@@ -37,7 +40,7 @@ function Portfolio() {
                   ARTWORKS
                 </div>
                 <div className="imagesContainer">
-                  <img className="imageElement" src={artworkImg13}/>
+                  <LazyLoadImage effect="blur" className="imageElement" src={artworkImg13}/>
                   <div className="imageFilterContainer"></div>
                 </div>
               </div>
@@ -46,7 +49,7 @@ function Portfolio() {
                   SKETCHBOOK
                 </div>
                 <div className="imagesContainer">
-                  <img className="imageElement" src={sketchImg27}/>
+                  <LazyLoadImage effect="blur" className="imageElement" src={sketchImg27}/>
                   <div className="imageFilterContainer"></div>
                 </div>
               </div>

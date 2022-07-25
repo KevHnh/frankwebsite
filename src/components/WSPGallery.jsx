@@ -6,6 +6,8 @@ import {
   faCircleChevronRight, 
   faCircleXmark
 } from '@fortawesome/free-solid-svg-icons'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import './WSPGallery.css'
 
@@ -61,13 +63,11 @@ const WSPGallery = ({galleryImages}) => {
       <div className='galleryWrap'>
         {
           galleryImages && galleryImages.map((slide, index) => {
+            let src = slide.img
+
             return(
-              <div 
-                className='single' 
-                key={index}
-                onClick={ () => handleOpenModal(index) }
-              >
-                <img src={slide.img} alt='' />
+              <div className='single' key={index} onClick={ () => handleOpenModal(index) }>
+                <LazyLoadImage effect="blur" src={src}/>
               </div>
             )
           })

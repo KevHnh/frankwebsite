@@ -1,8 +1,9 @@
 import React from 'react'
 import NavBar from './NavBar'
-import aboutImg1 from '../images/aboutImg1.jpg'
 import aboutImg2 from '../images/aboutImg2.jpg'
 import './About.css'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function About() {
   return (
@@ -18,7 +19,7 @@ function About() {
                 </div>
             </div>
             <div className="aboutRightSection">
-                <img className="aboutImgContainer" alt="" src={aboutImg2}></img>
+                <LazyLoadImage effect="blur" className="aboutImgContainer" alt="" src={aboutImg2}/>
                 <div className="aboutImgDesc">Flu Sketches</div>
             </div>
         </div>
