@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import NavBar from './NavBar'
 import './ArtworkPage.css'
 import WSPGallery from './WSPGallery'
@@ -115,6 +115,10 @@ const galleryImages = [
 ]
 
 function ArtworkPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const navigate = useNavigate();
 
   const redirectPage = (path) => {

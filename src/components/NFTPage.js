@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import NavBar from './NavBar'
 import './NFTPage.css'
 import WSPGallery from './WSPGallery'
@@ -18,6 +18,10 @@ import nftImg11 from '../nftImages/nftImg11.jpg'
 import nftImg12 from '../nftImages/nftImg12.jpg'
 
 function NFTPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  
   const navigate = useNavigate();
 
   const redirectPage = (path) => {

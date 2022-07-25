@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import NavBar from './NavBar'
 import './SketchbookPage.css'
 import WSPGallery from './WSPGallery'
@@ -67,6 +67,10 @@ const galleryImages = [
 ]
 
 function SketchbookPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const navigate = useNavigate();
 
   const redirectPage = (path) => {
