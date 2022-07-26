@@ -26,7 +26,6 @@ function NFTPage() {
 
   const redirectPage = (path) => {
     navigate(path);
-    window.location.reload(false);
   };
 
   const galleryImages = [

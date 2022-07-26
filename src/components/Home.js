@@ -22,7 +22,6 @@ function Home() {
 
   const redirectPage = (path) => {
     navigate(path);
-    window.location.reload(false);
   };
 
   return (

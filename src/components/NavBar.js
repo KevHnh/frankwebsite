@@ -21,7 +21,6 @@ function NavBar() {
 
   const redirectPage = (path) => {
     navigate(path);
-    window.location.reload(false);
   };
 
   useEffect(() => {
