@@ -5,6 +5,7 @@
 }
 
 .aboutContainer {
+    overflow: false;
     background: rgb(207,208,251);
     background: linear-gradient(0deg, rgba(207,208,251,1) 0%, rgba(231,186,126,1) 100%);
 }
@@ -22,7 +23,7 @@
 }
 
 .aboutCard {
-    width: 60vw;
+    width: 80vw;
     height: 50vw;
     display: flex;
     justify-content: center;
@@ -31,8 +32,8 @@
 
 .aboutLeftSection {
     width: 100vw;
-    height: 50%;
-    background-color: rgba(0, 0, 0, 0.6);
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
     transform: translateX(1rem);
     border: .2rem solid white;
@@ -46,7 +47,7 @@
 }
 
 .aboutImgContainer {
-    width: 25vw;
+    width: 30vw;
     border-radius: 15px;
     border: .2rem solid white;
     transform: translateX(-1rem);
@@ -55,7 +56,7 @@
 .aboutText {
     padding: 2rem;
     padding-right: 5rem;
-    font-size: 1.1vw;
+    font-size: 1.25vw;
     white-space: pre-line;
 }
 
@@ -83,7 +84,7 @@
     transform: scale(1.2);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
     .aboutPadding {
         width: 10%;
     }
@@ -92,7 +93,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 80rem;
+        height: 70rem;
     }
 
     .aboutCard {
@@ -106,7 +107,7 @@
     }
     
     .aboutLeftSection {
-        width: 17rem;
+        width: 20rem;
         height: 55rem;
         padding-bottom: 1rem;
         transform: translateY(-2rem);
