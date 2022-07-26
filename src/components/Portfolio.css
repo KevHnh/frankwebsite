@@ -86,25 +86,25 @@
     }
 
     .sectionContainer {
-        width: 40vw;
-        height: 40vw;
+        width: 50vw;
+        height: 50vw;
         margin: 1rem;
         background: rgb(0, 0, 0, .1);
         border-radius: 15px;
     }
     
     .imagesContainer {
-        width: 40vw;
-        height: 40vw;
+        width: 50vw;
+        height: 50vw;
     }
     
     .imageElement {
-        width: 40vw;
-        height: 40vw;
+        width: 50vw;
+        height: 50vw;
     }
     
     .imageFilterContainer {
-        width: 40vw;
-        height: 40vw;
+        width: 50vw;
+        height: 50vw;
     }
 }

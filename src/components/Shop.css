@@ -1,0 +1,22 @@
+.shopBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    font-weight: 700;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    background: rgb(140,134,255);
+    background: linear-gradient(0deg, rgba(140,134,255,1) 0%, rgba(167,255,136,1) 100%);
+      
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.shopWrapper {
+    font-size: 1.5rem;
+}  
