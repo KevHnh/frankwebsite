@@ -21,7 +21,7 @@ function About() {
                     <div className="aboutText">
                         <span>Hi, my name is Frank Lu (Flu Sketches).<br/><br/></span>
                         <span>I draw digitally on Procreate, Adobe photoshop, and Clip studio Paint. 
-                            As artist, we strive to be better and take others around us as role models. 
+                            As an artist, I strive to be better and take others around me as role models. 
                             For me that would include social content creators and modern day artists like 
                             RossDraws, Guweiz, Wlop, SamdoesArts, and KushinovIlya. Looking at their work 
                             inspires me to do better and to be able to tell stories or messages in a single 

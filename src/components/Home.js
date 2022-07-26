@@ -34,7 +34,7 @@ function Home() {
             </div>
         </div>
         <div className="homeBody">
-            <BackgroundSlider images={images} duration={10} transition={1}/>
+            <BackgroundSlider images={images} duration={5} transition={1}/>
         </div>
     </div>
   )
