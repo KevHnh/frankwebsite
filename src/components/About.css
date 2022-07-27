@@ -70,6 +70,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    bottom: 1rem;
 }
 
 .socialMediaContainer > a {
@@ -127,6 +129,7 @@
 
     .aboutText {
         padding: 2rem;
+        padding-bottom: 4rem;
         padding-top: 5rem; 
         font-size: 1.1rem;
         white-space: pre-line;
