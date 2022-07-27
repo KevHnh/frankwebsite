@@ -96,16 +96,41 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .navBarWholeContainer {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navBarWrapper {
+        margin-left: auto;
+        margin-right: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
     .navBarContainer {
         display: flex;
         flex-direction: column;
         font-size: 1.5rem;
         line-height: 2.5rem;
         margin-top: 0;
+        width: 50%;
+        height: 100%;
+    }
+
+    .navBarRight a:nth-child(4) {
+        margin-bottom: 0rem;
+    }
+
+    .navBarSeocialMedia {
+        display: flex;
+        margin-bottom: 50rem;
     }
 
     .homeButton {
-        margin-top: 5rem;
+        margin-top: 5.5rem;
         background-color: black;
     }
 
@@ -119,11 +144,12 @@
     .navBarRight {
         display: flex;
         flex-direction: column;
-        background-color: black;
+        background-color: transparent;
         margin: 0;
         justify-content: center;
         align-items: center;
         text-align: center;
+        background-color: black;
     }
 
     .navButton {
@@ -132,7 +158,24 @@
         z-index: 50;
     }
 
-    .navButton.close {
-        background-color: black
+    .navButton {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0rem;
+        font-size: 5rem;
+        width: 100vw;
+        height: 8vw;
+        transform: translateX(24.5vw);
+    }
+    
+    .actualButton {
+        color: white;
+        margin: 0;
+        margin-right: 0;
+        padding: 0;
+        position: absolute;
+        right: .5rem;
+        top: .5rem;
     }
 }
