@@ -47,6 +47,7 @@
 
 .homePathsText {
     transform: translateY(.25rem);
+    user-select: none;
 }
 
 .homePaths:hover + .homeTitle {
