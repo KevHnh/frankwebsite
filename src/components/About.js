@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from './NavBar'
-import aboutImg2 from '../images/aboutImg2.jpg'
+import aboutImg2 from '../images/aboutImg2_50.jpg'
 import './About.css'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
