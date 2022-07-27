@@ -1,15 +1,14 @@
 .artworkPageContainer {
-    background: rgb(39, 39, 39);
+    background: black;
 }
 
 .artworkPageBody {
-    background: rgb(0, 0, 0, .1);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 120vh;
+    min-height: 100vh;
     overflow: hidden;
 }
 
@@ -40,5 +39,11 @@
 .artworkDirectButton:hover {
     cursor: pointer;
     background-color: white;
-    color: rgba(177,177,177,1);
+    color: black;
+}
+
+@media screen and (max-width: 1000px) {
+    .artworkPageBody {
+        min-height: 110vh;
+    }
 }

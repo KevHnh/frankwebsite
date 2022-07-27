@@ -1,16 +1,14 @@
 .nftPageContainer {
-    background: rgb(177,177,177);
-    background: linear-gradient(0deg, rgba(177,177,177,1) 0%, rgba(0,0,0,1) 100%);
+    background: black;
 }
 
 .nftPageBody {
-    background: rgb(0, 0, 0, .1);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 120vh;
+    min-height: 100vh;
     overflow: hidden;
 }
 
@@ -41,5 +39,11 @@
 .nftDirectButton:hover {
     cursor: pointer;
     background-color: white;
-    color: rgba(177,177,177,1);
+    color: black;
+}
+
+@media screen and (max-width: 1000px) {
+    .nftPageBody {
+        min-height: 110vh;
+    }
 }
