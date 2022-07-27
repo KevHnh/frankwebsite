@@ -15,10 +15,13 @@
   .galleryWrap .single img {
     border-radius: 10px;
     max-width: 100%;
+    border: .2rem solid white;
+    border-radius: 15px;
   }
   
   .galleryWrap .single img:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
+    transition: transform .3s ease ;
   }
   
   .sliderWrap {

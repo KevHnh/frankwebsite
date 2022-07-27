@@ -1,6 +1,6 @@
 .nftPageContainer {
-    background: rgb(168,250,255);
-    background: linear-gradient(0deg, rgba(168,250,255,1) 0%, rgba(188,192,255,1) 100%);
+    background: rgb(177,177,177);
+    background: linear-gradient(0deg, rgba(177,177,177,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 .nftPageBody {
