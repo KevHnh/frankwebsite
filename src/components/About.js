@@ -41,7 +41,6 @@ function About() {
             </div>
             <div className="aboutPadding"></div>
         </div>
-
     </div>
   )
 }

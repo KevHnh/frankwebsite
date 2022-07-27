@@ -9,7 +9,7 @@
     position: fixed; 
     top: 0; 
     left: 0; 
-    background: black;
+    background: rgb(35, 35, 35);
       
     /* Preserve aspet ratio */
     min-width: 100%;

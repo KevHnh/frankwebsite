@@ -1,21 +1,145 @@
-.contactBody {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    height: 100%;
-    font-weight: 700;
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    background: black;
-      
-    /* Preserve aspet ratio */
-    min-width: 100%;
-    min-height: 100%;
+.navBarContainer {
+    position: fixed;
+    z-index: 5;
+    background: transparent;
+}
+
+.contactContainer {
+    overflow: false;
+    background: rgb(35, 35, 35);
 }
 
 .contactWrapper {
-    font-size: 1.5rem;
-}  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contactPadding {
+    width: 20%;
+}
+
+.contactCard {
+    width: 80vw;
+    height: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactLeftSection {
+    width: 100vw;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    transform: translateX(1rem);
+    border: .2rem solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactRightSection {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactImgContainer {
+    width: 30vw;
+    border-radius: 15px;
+    border: .2rem solid white;
+    transform: translateX(-1rem);
+}
+
+.contactText {
+    padding: 2rem;
+    padding-left: 3rem;
+    padding-right: 5rem;
+    padding-bottom: 8rem;
+    font-size: 1.25vw;
+    white-space: pre-line;
+}
+
+.contactText > span {
+    white-space: normal;
+    overflow: hidden;
+}
+
+.socialMediaContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 2rem;
+}
+
+.socialMediaContainer > a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-decoration: none;
+    color: white;
+    transition: transform .5s ease;
+}
+
+.socialMediaContainer > a:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 1000px) {
+    .contactPadding {
+        width: 10%;
+    }
+
+    .contactWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 75rem;
+    }
+
+    .contactCard {
+        flex-direction: column-reverse;
+    }
+
+    .contactCard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contactLeftSection {
+        width: 20rem;
+        height: 55rem;
+        padding-bottom: 1rem;
+        transform: translateY(-2rem);
+    }
+    
+    .contactRightSection {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactImgContainer {
+        width: 20rem;
+        transform: translateX(0rem) translateY(1rem);
+    }
+
+    .contactText {
+        padding: 2rem;
+        padding-bottom: 4rem;
+        padding-top: 5rem; 
+        font-size: 1.1rem;
+        white-space: pre-line;
+    }
+
+    .socialIcons {
+        font-size: 1.5rem !important;
+    }
+}
