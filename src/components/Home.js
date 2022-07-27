@@ -28,7 +28,9 @@ function Home() {
     <div className='homeContainer'>
         <div className="homeSection">
             <div className='homeWrapper'>
-              <div className="homePaths" onClick={() => redirectPage("/About/")}>ENTER</div> 
+              <div className="homePaths" onClick={() => redirectPage("/About/")}>
+                <div className="homePathsText">ENTER</div>
+              </div> 
                 <div className="homeTitle">FRANK LU</div>
             </div>
         </div>

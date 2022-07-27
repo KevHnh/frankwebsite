@@ -15,17 +15,15 @@
 
 .homeWrapper {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
 
 .homeTitle {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
+    position: absolute;
     font-size: 4rem;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.5);
@@ -34,15 +32,21 @@
 }
 
 .homePaths {
-    position: sticky;
+    position: absolute;
     bottom: 4rem;
     border: .2rem solid rgba(255, 255, 255, 0.5);
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: .4rem;
     border-radius: 15px;
     color: rgba(255, 255, 255, 0.5);
-    transition: color .5s ease, border .5s ease;
+    padding-left: .25rem;
+    padding-right: .25rem;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    transition: all .5s ease;
+    z-index: 10;
+}
+
+.homePathsText {
+    transform: translateY(.25rem);
 }
 
 .homePaths:hover + .homeTitle {
@@ -50,6 +54,10 @@
 }
 
 .homePaths:hover {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
     cursor: pointer;
     color: rgba(255, 255, 255, 1);
     border: .2rem solid rgba(255, 255, 255, 1);
