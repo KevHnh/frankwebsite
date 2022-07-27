@@ -23,12 +23,36 @@
 
 .homeTitle {
     margin: auto;
-    position: absolute;
+    position: relative;
     font-size: 4rem;
+    line-height: 3.25rem;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.5);
-    transition: color .5s ease;
+    transition: color .5s ease-in-out;
     text-align: center;
+}
+
+.homeTitle::after {
+    display:block;
+    content: '';
+    border-bottom: solid .3rem white;  
+    transform: scaleX(0);  
+    transition: transform .5s ease-in-out;
+    transform-origin:100% 40%  
+}
+
+.homePathsText {
+    transform: translateY(.25rem);
+    user-select: none;
+}
+
+.homePaths:hover + .homeTitle {
+    color: rgba(255, 255, 255, 1);
+}
+
+.homePaths:hover + .homeTitle::after {
+    transform: scaleX(1);
+    transform-origin:0 50%;
 }
 
 .homePaths {
@@ -45,15 +69,6 @@
     z-index: 10;
 }
 
-.homePathsText {
-    transform: translateY(.25rem);
-    user-select: none;
-}
-
-.homePaths:hover + .homeTitle {
-    color: rgba(255, 255, 255, 1);
-}
-
 .homePaths:hover {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -62,4 +77,19 @@
     cursor: pointer;
     color: rgba(255, 255, 255, 1);
     border: .2rem solid rgba(255, 255, 255, 1);
+}
+
+@media screen and (max-width: 1000px) {
+    .homeSection {
+        font-size: 1.5rem;
+    }
+
+    .homeTitle {
+        font-size: 3rem;
+    }
+
+    .homePathsText {
+        transform: translateY(.2rem);
+        user-select: none;
+    }
 }
