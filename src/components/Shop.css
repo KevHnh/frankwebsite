@@ -9,8 +9,7 @@
     position: fixed; 
     top: 0; 
     left: 0; 
-    background: rgb(140,134,255);
-    background: linear-gradient(0deg, rgba(140,134,255,1) 0%, rgba(167,255,136,1) 100%);
+    background: black;
       
     /* Preserve aspet ratio */
     min-width: 100%;
