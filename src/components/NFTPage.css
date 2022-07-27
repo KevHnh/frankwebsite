@@ -41,9 +41,3 @@
     background-color: white;
     color: black;
 }
-
-@media screen and (max-width: 1000px) {
-    .nftPageBody {
-        min-height: 110vh;
-    }
-}
