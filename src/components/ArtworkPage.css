@@ -8,7 +8,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 110rem;;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 .artworkPageWrapper {
@@ -22,6 +24,7 @@
 }
 
 .artworkDirectButton {
+    margin-top: 3rem;
     margin-bottom: 3rem;
     font-size: 1.25rem;
     font-weight: bold;
@@ -37,37 +40,5 @@
 .artworkDirectButton:hover {
     cursor: pointer;
     background-color: white;
-    color: rgba(236,206,255,1);
+    color: rgba(177,177,177,1);
 }
-
-@media screen and (max-width: 1501px) {
-    .artworkPageBody {
-        height: 125rem;
-    }
-}
-
-@media screen and (max-width: 1250px) {
-    .artworkPageBody {
-        height: 145rem;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .artworkPageBody {
-        height: 180rem;
-    }
-}
-
-@media screen and (max-width: 755px) {
-    .artworkPageBody {
-        height: 245rem;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .artworkPageBody {
-        height: 435rem;
-    }
-}
-
-

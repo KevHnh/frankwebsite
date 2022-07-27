@@ -9,8 +9,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 .nftPageWrapper {
@@ -24,6 +25,7 @@
 }
 
 .nftDirectButton {
+    margin-top: 3rem;
     margin-bottom: 3rem;
     font-size: 1.25rem;
     font-weight: bold;
@@ -39,30 +41,5 @@
 .nftDirectButton:hover {
     cursor: pointer;
     background-color: white;
-    color: rgba(168,250,255,1);
-}
-
-
-@media screen and (max-width: 1478px) {
-    .nftPageBody {
-        height: 65rem;
-    }
-}
-
-@media screen and (max-width: 981px) {
-    .nftPageBody {
-        height: 75rem;
-    }
-}
-
-@media screen and (max-width: 755px) {
-    .nftPageBody {
-        height: 105rem;
-    }
-}
-
-@media screen and (max-width: 505.5px) {
-    .nftPageBody {
-        height: 205rem;
-    }
+    color: rgba(177,177,177,1);
 }

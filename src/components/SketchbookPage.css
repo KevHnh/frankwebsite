@@ -9,7 +9,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 110rem;;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 .sketchbookPageWrapper {
@@ -23,6 +25,7 @@
 }
 
 .sketchbookDirectButton {
+    margin-top: 3rem;
     margin-bottom: 3rem;
     font-size: 1.25rem;
     font-weight: bold;
@@ -39,34 +42,4 @@
     cursor: pointer;
     background-color: white;
     color: rgba(177,177,177,1);
-}
-
-@media screen and (max-width: 1501px) {
-    .sketchbookPageBody {
-        height: 125rem;
-    }
-}
-
-@media screen and (max-width: 1250px) {
-    .sketchbookPageBody {
-        height: 145rem;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .sketchbookPageBody {
-        height: 190rem;
-    }
-}
-
-@media screen and (max-width: 755px) {
-    .sketchbookPageBody {
-        height: 255rem;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .sketchbookPageBody {
-        height: 470rem;
-    }
 }
