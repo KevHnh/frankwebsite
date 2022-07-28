@@ -49,7 +49,7 @@ const WSPGallery = ({galleryImages}) => {
           <FontAwesomeIcon icon={faCircleXmark} className='btnClose' onClick={handleCloseModal} onKeyPress={handleCloseModal} style={{fontSize:"2rem"}}/>
           <FontAwesomeIcon icon={faCircleChevronLeft} className='btnPrev' onClick={prevSlide} style={{fontSize:"2rem"}}/>
           <FontAwesomeIcon icon={faCircleChevronRight} className='btnNext' onClick={nextSlide} style={{fontSize:"2rem"}}/>
-          <div className='fullScreenImage'>
+          <div className='fullScreenImage' onClick={handleCloseModal}>
             <img src={galleryImages[slideNumber].img} alt=''/>
           </div>
         </div>
