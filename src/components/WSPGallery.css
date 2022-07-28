@@ -5,12 +5,13 @@
     align-items: center;
     justify-content: center;
     max-width: 100rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
 
   .galleryWrap .single {
     width: 15rem;
     cursor: pointer;
+    user-select: none;
   }
   
   .galleryWrap .single img {

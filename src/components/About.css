@@ -39,6 +39,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 3rem;
+
 }
 
 .aboutRightSection {
@@ -46,10 +48,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 3rem;
 }
 
 .aboutImgContainer {
-    width: 30vw;
+    width: 28vw;
     border-radius: 15px;
     border: .2rem solid white;
     transform: translateX(-1rem);
@@ -117,6 +120,7 @@
         height: 55rem;
         padding-bottom: 1rem;
         transform: translateY(-2rem);
+        margin: 0;
     }
     
     .aboutRightSection {
@@ -124,6 +128,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0;
     }
 
     .aboutImgContainer {

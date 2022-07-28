@@ -6,6 +6,7 @@
     text-align: center;
     color: #1A2744;
     margin-top: .25rem;
+    display: flex;
 }
 
 .navBarContainer a {
@@ -35,13 +36,19 @@
     transform-origin:0 50%;
 }
 
+.navBarSocialMedia {
+    display: flex;
+}
+
 .navBarLeft {
-    margin-left: 5rem;
     width: 100%;
+    margin-left: 5rem;
 }
 
 .navBarRight {
-    float: right;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
     color: #1A2744;
     margin-right: 5rem;
 }
@@ -97,17 +104,17 @@
 
 @media screen and (max-width: 1000px) {
     .navBarWholeContainer {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
         display: flex;
         justify-content: flex-end;
     }
 
     .navBarWrapper {
-        margin-left: auto;
+        margin-left: 0;
         margin-right: 0;
         display: flex;
         justify-content: flex-end;
+        width: 100%;
     }
 
     .navBarContainer {
@@ -115,18 +122,16 @@
         flex-direction: column;
         font-size: 1.5rem;
         line-height: 2.5rem;
-        margin-top: 0;
-        width: 50%;
-        height: 100%;
+        margin: 0;
+        width: 100%;
     }
 
     .navBarRight a:nth-child(4) {
         margin-bottom: 0rem;
     }
 
-    .navBarSeocialMedia {
+    .navBarSocialMedia {
         display: flex;
-        margin-bottom: 50rem;
     }
 
     .homeButton {
@@ -150,6 +155,7 @@
         align-items: center;
         text-align: center;
         background-color: black;
+        width: 100%;
     }
 
     .navButton {
@@ -164,9 +170,6 @@
         top: 0;
         padding: 0rem;
         font-size: 5rem;
-        width: 100vw;
-        height: 8vw;
-        transform: translateX(24.5vw);
     }
     
     .actualButton {

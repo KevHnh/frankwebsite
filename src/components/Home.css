@@ -43,6 +43,7 @@
 
 .homePathsText {
     transform: translateY(.25rem);
+    font-weight: bold;
     user-select: none;
 }
 

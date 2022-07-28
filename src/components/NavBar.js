@@ -51,18 +51,17 @@ function NavBar() {
             <div className='navBarLeft'> 
               <a className="homeButton" onClick={() => redirectPage("/")}>FRANK LU</a>
             </div>
-          <div className='navBarRight'>
-              <a onClick={() => redirectPage("/About/")}>ABOUT</a>
-              <a onClick={() => redirectPage("/Portfolio/")}>PORTFOLIO</a>
-              <a onClick={() => redirectPage("/Shop/")}>SHOP</a>
-              <a onClick={() => redirectPage("/Contact/")}>CONTACT</a>
-              {(toggleMenu) ? 
-                <div className="navBarSeocialMedia">
-                  <a href="https://twitter.com/NFT_Flu" target="_blank"><FontAwesomeIcon className="socialIcons" icon={faTwitter} style={{fontSize: '2.25rem'}}/></a>
-                  <a href="https://www.instagram.com/flu_sketches/" target="_blank"><FontAwesomeIcon className="socialIcons" icon={faInstagram} style={{fontSize: '2.25rem'}}/></a>
-                  <a href="https://www.tiktok.com/@flu_sketches?lang=en" target="_blank"><FontAwesomeIcon className="socialIcons" icon={faTiktok} style={{fontSize: '2.25rem'}}/></a>
-                </div> : <div></div> }
-          </div>
+            <div className='navBarRight'>
+                <a onClick={() => redirectPage("/About/")}>ABOUT</a>
+                <a onClick={() => redirectPage("/Portfolio/")}>PORTFOLIO</a>
+                <a onClick={() => redirectPage("/Shop/")}>SHOP</a>
+                <a onClick={() => redirectPage("/Contact/")}>CONTACT</a>
+                <div className="navBarSocialMedia">
+                  <a href="https://twitter.com/NFT_Flu" target="_blank"><FontAwesomeIcon className="socialIcons" icon={faTwitter} style={{fontSize: '1.5rem'}}/></a>
+                  <a href="https://www.instagram.com/flu_sketches/" target="_blank"><FontAwesomeIcon className="socialIcons" icon={faInstagram} style={{fontSize: '1.5rem'}}/></a>
+                  <a href="https://www.tiktok.com/@flu_sketches?lang=en" target="_blank"><FontAwesomeIcon className="socialIcons" icon={faTiktok} style={{fontSize: '1.5rem'}}/></a>
+                </div> 
+            </div>
         </div>
       </div>
       )}
