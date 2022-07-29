@@ -67,7 +67,7 @@ function NavBar() {
               <div onClick={toggleNav}><MenuIcon className="actualButton" style={{fontSize:"3rem"}}/></div>
             </div>
             }
-          </div >
+          </div>
         </div>
     </div>
   )

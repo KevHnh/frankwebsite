@@ -69,19 +69,11 @@
     color: rgba(255, 255, 255, 0.5);
     transition: all .5s ease;
     z-index: 2;
-    border-radius: 15px;
-    border: .2rem solid rgba(255, 255, 255, 0.5);
-
 }
 
 .homePaths:hover {
     cursor: pointer;
-    padding-top: .5rem;
-    padding-right: .5rem;
-    padding-left: .5rem;
-    padding-bottom: .2rem;
     color: rgba(255, 255, 255, 1);
-    border: .2rem solid rgba(255, 255, 255, 1);
 }
 
 .homePaths:hover .homePathsText {
