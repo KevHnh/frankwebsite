@@ -42,12 +42,12 @@ function NavBar() {
         <div className="navBarWrapper">
           <div className='navBarContainer'>
             <div className='navBarLeft'> 
-              <a href="#Home" className="homeButton">FRANK LU</a>
+              <a onClick={toggleNav} href="#Home" className="homeButton">FRANK LU</a>
             </div>
             <div className='navBarRight'>
-                <a href="#About">ABOUT</a>
-                <a href="#Portfolio">PORTFOLIO</a>
-                <a href="#Contact">CONTACT</a>
+                <a onClick={toggleNav} href="#About">ABOUT</a>
+                <a onClick={toggleNav} href="#Portfolio">PORTFOLIO</a>
+                <a onClick={toggleNav} href="#Contact">CONTACT</a>
                 <div className="navBarSocialMedia">
                   <a href="https://twitter.com/NFT_Flu" target="_blank"><FontAwesomeIcon className="socialIcons" icon={faTwitter} style={{fontSize: '1.5rem'}}/></a>
                   <a href="https://www.instagram.com/flu_sketches/" target="_blank"><FontAwesomeIcon className="socialIcons" icon={faInstagram} style={{fontSize: '1.5rem'}}/></a>

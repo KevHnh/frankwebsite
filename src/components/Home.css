@@ -68,7 +68,7 @@
     bottom: 4rem;
     color: rgba(255, 255, 255, 0.5);
     transition: all .5s ease;
-    z-index: 10;
+    z-index: 2;
     border-radius: 15px;
     border: .2rem solid rgba(255, 255, 255, 0.5);
 
