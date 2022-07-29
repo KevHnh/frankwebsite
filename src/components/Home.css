@@ -109,4 +109,12 @@
         transform: translateY(.2rem);
         user-select: none;
     }
+
+    .downIcon {
+        width: 2rem !important;
+        height: 2rem !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        transform: translateY(.3rem);
+    }
 }
