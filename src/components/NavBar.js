@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 import './NavBar.css'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faTiktok, faTwitter, faInstagram  } from '@fortawesome/free-brands-svg-icons';
 
@@ -26,12 +25,6 @@ function NavBar() {
     setToggleMenu(!toggleMenu)
   }
 
-  const navigate = useNavigate();
-
-  const redirectPage = (path) => {
-    navigate(path);
-  };
-
   useEffect(() => {
     const changeWidth = () => {
       setScreenWidth(window.innerWidth)
@@ -49,13 +42,12 @@ function NavBar() {
         <div className="navBarWrapper">
           <div className='navBarContainer'>
             <div className='navBarLeft'> 
-              <a className="homeButton" onClick={() => redirectPage("/")}>FRANK LU</a>
+              <a href="#Home" className="homeButton">FRANK LU</a>
             </div>
             <div className='navBarRight'>
-                <a onClick={() => redirectPage("/About/")}>ABOUT</a>
-                <a onClick={() => redirectPage("/Portfolio/")}>PORTFOLIO</a>
-                <a onClick={() => redirectPage("/Shop/")}>SHOP</a>
-                <a onClick={() => redirectPage("/Contact/")}>CONTACT</a>
+                <a href="#About">ABOUT</a>
+                <a href="#Portfolio">PORTFOLIO</a>
+                <a href="#Contact">CONTACT</a>
                 <div className="navBarSocialMedia">
                   <a href="https://twitter.com/NFT_Flu" target="_blank"><FontAwesomeIcon className="socialIcons" icon={faTwitter} style={{fontSize: '1.5rem'}}/></a>
                   <a href="https://www.instagram.com/flu_sketches/" target="_blank"><FontAwesomeIcon className="socialIcons" icon={faInstagram} style={{fontSize: '1.5rem'}}/></a>

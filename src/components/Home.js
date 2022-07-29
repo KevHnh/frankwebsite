@@ -1,7 +1,8 @@
 import React from 'react'
 import './Home.css'
 import BackgroundSlider from 'react-background-slider'
-import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 import img1 from '../images/img1.jpg'
 import img2 from '../images/img2.jpg'
@@ -18,18 +19,12 @@ import img10 from '../images/img10.jpg'
 function Home() {
   const images = [img1, img2, img3, img9, img4, img5, img8, img6, img7, img10 ]
 
-  const navigate = useNavigate();
-
-  const redirectPage = (path) => {
-    navigate(path);
-  };
-
   return (
-    <div className='homeContainer'>
+    <div id="Home" className='homeContainer'>
         <div className="homeSection">
             <div className='homeWrapper'>
-              <div className="homePaths" onClick={() => redirectPage("/About/")}>
-                <div className="homePathsText">ENTER</div>
+              <div className="homePaths">
+                <a href="#About" className="homePathsText"><FontAwesomeIcon className="downIcon" icon={faAngleDown}/></a>
               </div> 
                 <div className="homeTitle">FRANK LU</div>
             </div>

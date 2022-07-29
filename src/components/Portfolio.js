@@ -1,7 +1,6 @@
 import React from 'react'
 import NavBar from './NavBar'
 import './Portfolio.css'
-import { useNavigate } from "react-router-dom";
 
 import nftImg2 from '../nftImages/nftImg2.jpg'
 import artworkImg13 from '../artworkImages/artworkImg13.jpg'
@@ -12,20 +11,14 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 function Portfolio() {
-  const navigate = useNavigate();
-
-  const redirectPage = (path) => {
-    navigate(path);
-  };
-
   return (
-    <div className='portfolioContainer'>
+    <div id="Portfolio" className='portfolioContainer'>
         <div className='navBarContainer'>
             <NavBar/>
         </div>
         <div className="portfolioWrapper">
             <div className="portfolioBody">
-              <div onClick={() => redirectPage("/Portfolio/NFT/")} className="sectionContainer">
+              <a href="#NFT" className="sectionContainer">
                 <div className="titleContainer">
                   NFT WORK
                 </div>
@@ -33,8 +26,8 @@ function Portfolio() {
                   <LazyLoadImage effect="blur" className="imageElement" src={nftImg2}/>
                   <div className="imageFilterContainer"></div>
                 </div>
-              </div>
-              <div onClick={() => redirectPage("/Portfolio/Artworks/")} className="sectionContainer">
+              </a>
+              <a href="#Artworks" className="sectionContainer">
                 <div className="titleContainer">
                   ARTWORKS
                 </div>
@@ -42,8 +35,8 @@ function Portfolio() {
                   <LazyLoadImage effect="blur" className="imageElement" src={artworkImg13}/>
                   <div className="imageFilterContainer"></div>
                 </div>
-              </div>
-              <div onClick={() => redirectPage("/Portfolio/Sketchbook/")} className="sectionContainer">
+              </a>
+              <a href="#Sketchbook" className="sectionContainer">
                 <div className="titleContainer">
                   SKETCHBOOK
                 </div>
@@ -51,7 +44,7 @@ function Portfolio() {
                   <LazyLoadImage effect="blur" className="imageElement" src={sketchImg27}/>
                   <div className="imageFilterContainer"></div>
                 </div>
-              </div>
+              </a>
             </div>
         </div>
 

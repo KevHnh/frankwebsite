@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import NavBar from './NavBar'
 import './ArtworkPage.css'
 import WSPGallery from './WSPGallery'
-import { useNavigate } from "react-router-dom";
 
 import artworkImg1 from '../artworkImages/artworkImg1.jpg'
 import artworkImg2 from '../artworkImages/artworkImg2.jpg'
@@ -119,14 +118,8 @@ function ArtworkPage() {
     window.scrollTo(0, 0)
   }, [])
 
-  const navigate = useNavigate();
-
-  const redirectPage = (path) => {
-    navigate(path);
-  };
-
   return (
-    <div className='artworkPageContainer'>
+    <div id="Artworks" className='artworkPageContainer'>
         <div className='navBarContainer'>
             <NavBar/>
         </div>
@@ -134,7 +127,7 @@ function ArtworkPage() {
           <div className="artworkPageWrapper">
             <WSPGallery galleryImages={galleryImages}/>
           </div>
-          <div className="artworkDirectButton" onClick={() => redirectPage("/Portfolio/Sketchbook/")}>SKETCHBOOK</div>
+          <a href="#Sketchbook" className="artworkDirectButton">SKETCHBOOK</a>
         </div>
     </div>
   )

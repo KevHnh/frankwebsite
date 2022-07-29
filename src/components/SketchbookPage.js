@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import NavBar from './NavBar'
 import './SketchbookPage.css'
 import WSPGallery from './WSPGallery'
-import { useNavigate } from "react-router-dom";
 
 import sketchImg1 from '../sketchesImages/sketchImg1.jpg'
 import sketchImg2 from '../sketchesImages/sketchImg2.jpg'
@@ -71,14 +70,8 @@ function SketchbookPage() {
     window.scrollTo(0, 0)
   }, [])
 
-  const navigate = useNavigate();
-
-  const redirectPage = (path) => {
-    navigate(path);
-  };
-
   return (
-    <div className='sketchbookPageContainer'>
+    <div id="Sketchbook" className='sketchbookPageContainer'>
         <div className='navBarContainer'>
             <NavBar/>
         </div>
@@ -86,7 +79,7 @@ function SketchbookPage() {
           <div className="sketchbookPageWrapper">
               <WSPGallery galleryImages={galleryImages}/>
           </div>
-          <div className="sketchbookDirectButton" onClick={() => redirectPage("/Portfolio/NFT/")}>NFT</div>
+          <a href="#NFT" className="sketchbookDirectButton">NFT</a>
         </div>
 
     </div>

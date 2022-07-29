@@ -23,6 +23,8 @@
 }
 
 .sketchbookDirectButton {
+    color: white;
+    text-decoration: none;
     margin-top: 3rem;
     margin-bottom: 3rem;
     font-size: 1.25rem;

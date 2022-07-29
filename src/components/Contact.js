@@ -10,7 +10,7 @@ import {  faTiktok, faTwitter, faInstagram  } from '@fortawesome/free-brands-svg
 
 function Contact() {
   return (
-    <div className='contactContainer'>
+    <div id="Contact" className='contactContainer'>
         <div className='navBarContainer'>
             <NavBar/>
         </div>

@@ -1,10 +1,14 @@
+.homeContainer {
+    height: 100vh;
+}
+
 .homeSection {
     color: white;
     font-size: 2rem;
     width:100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    position: fixed; 
+    position: relative; 
     top: 0; 
     left: 0; 
       
@@ -42,8 +46,8 @@
 }
 
 .homePathsText {
-    transform: translateY(.25rem);
-    font-weight: bold;
+    color: rgba(255, 255, 255, 0.5);
+    transition: transform .5s ease-in-out;
     user-select: none;
 }
 
@@ -57,27 +61,39 @@
 }
 
 .homePaths {
+    text-align: center;
+    vertical-align:middle;
+    width: 2.5rem;
     position: absolute;
     bottom: 4rem;
-    border: .4rem solid rgba(255, 255, 255, 0.5);
-    border-radius: 15px;
     color: rgba(255, 255, 255, 0.5);
-    padding-left: .25rem;
-    padding-right: .25rem;
-    padding-top: .1rem;
-    padding-bottom: .1rem;
     transition: all .5s ease;
     z-index: 10;
+    border-radius: 15px;
+    border: .2rem solid rgba(255, 255, 255, 0.5);
+
 }
 
 .homePaths:hover {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: .4rem;
-    padding-bottom: .4rem;
     cursor: pointer;
+    padding-top: .5rem;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    padding-bottom: .2rem;
     color: rgba(255, 255, 255, 1);
     border: .2rem solid rgba(255, 255, 255, 1);
+}
+
+.homePaths:hover .homePathsText {
+    color: white;
+}
+
+.downIcon {
+    width: 2rem !important;
+    height: 2rem !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    transform: translateY(.15rem);
 }
 
 @media screen and (max-width: 1000px) {

@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import NavBar from './NavBar'
 import './NFTPage.css'
 import WSPGallery from './WSPGallery'
-import { useNavigate } from "react-router-dom";
 
 import nftImg1 from '../nftImages/nftImg1.jpg'
 import nftImg2 from '../nftImages/nftImg2.jpg'
@@ -21,12 +20,6 @@ function NFTPage() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
-  
-  const navigate = useNavigate();
-
-  const redirectPage = (path) => {
-    navigate(path);
-  };
 
   const galleryImages = [
     {
@@ -68,7 +61,7 @@ function NFTPage() {
   ]
 
   return (
-    <div className='nftPageContainer'>
+    <div id="NFT" className='nftPageContainer'>
         <div className='navBarContainer'>
             <NavBar/>
         </div>
@@ -76,7 +69,7 @@ function NFTPage() {
           <div className="nftPageWrapper">
               <WSPGallery galleryImages={galleryImages}/>
           </div>
-          <div className="nftDirectButton" onClick={() => redirectPage("/Portfolio/Artworks/")}>ARTWORKS</div>
+          <a href="#Artworks" className="nftDirectButton">ARTWORKS</a>
         </div>
     </div>
   )
