@@ -11,9 +11,6 @@ import {  faTiktok, faTwitter, faInstagram  } from '@fortawesome/free-brands-svg
 function About() {
   return (
     <div id="About" className='aboutContainer'>
-        <div className='navBarContainer'>
-            <NavBar/>
-        </div>
         <div className="aboutWrapper">
             <div className="aboutPadding"></div>
             <div className="aboutCard">
