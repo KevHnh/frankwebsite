@@ -1,6 +1,5 @@
 import React from 'react'
-import NavBar from './NavBar'
-import aboutImg2 from '../images/aboutImg2.jpg'
+import aboutImg3 from '../images/aboutImg3.jpg'
 import './About.css'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -32,7 +31,7 @@ function About() {
                 </div>
                 <div className="aboutRightSection">
                     <div className="rightSectionItems">
-                        <LazyLoadImage effect="blur" className="aboutImgContainer" alt="" src={aboutImg2}/>
+                        <LazyLoadImage effect="blur" className="aboutImgContainer" alt="" src={aboutImg3}/>
                     </div>
                 </div>
             </div>
