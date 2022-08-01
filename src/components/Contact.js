@@ -22,7 +22,7 @@ function Contact() {
                         <span>Enjoyed my work? Want to work together? Have or want some advice?<br/><br/></span>
                         <span>Feel free to reach out to me with anything to say. I constantly want to grow as an artist, so your
                           advice will be extremely valuable to me. I also want to help aspiring artists as well, so don't be afraid to
-                          ask questions as well. <br/><br/>
+                          ask questions. <br/><br/>
                         </span>
                     </div>
                     <div className="socialMediaContainer">
